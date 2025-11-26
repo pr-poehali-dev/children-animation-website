@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "Get characters data",
+      "method": "GET",
+      "path": "/?type=characters",
+      "expectedStatus": 200,
+      "expectedBody": {
+        "source": "fallback"
+      },
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Get reviews data",
+      "method": "GET",
+      "path": "/?type=reviews",
+      "expectedStatus": 200,
+      "expectedBody": {
+        "source": "fallback"
+      },
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Get services data",
+      "method": "GET",
+      "path": "/?type=services",
+      "expectedStatus": 200,
+      "expectedBody": {
+        "source": "fallback"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
